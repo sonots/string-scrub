@@ -1,1 +1,3 @@
-require 'string/scrub.so'
+unless "".respond_to?(:scrub)
+  require 'string/scrub.so'
+end
